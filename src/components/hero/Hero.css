@@ -1,0 +1,148 @@
+.hero{
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 100vh;
+  background-image: url('../../assets/Frame\ 1361.png');
+  background-color: rgba(128, 128, 128, 0.685);
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* overflow: hidden; */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.hero-header{
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 2%;
+}
+.hero-header-left{
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.hero-header-middle{
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+.catalog-container{
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-header-right{
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2%;
+}
+.search-bar{
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2%;
+}
+.search-input{
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  padding: 2%;
+}
+.logo span{
+ color:#8B4513;
+}
+.hero-heading{
+    font-size: 5rem;
+    width: 50%;
+}
+.hero-cards{
+  box-sizing: border-box;
+  background-color: #fff;
+  color: black;
+  width: fit-content;
+  display: flex;
+  gap:5%;
+  align-items: center;
+  font-size: small;
+}
+
+.hero-bottom-cards-container{
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 4%;
+  align-items: end;
+}
+.hero-card-image{
+  box-sizing: border-box;
+  width: 20%;
+}
+.scroll-text{
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width:720px) {
+  .hero-header{
+    flex-direction: column;
+    gap: 20px;
+  }
+  .search-icon{
+    margin-left: 5px;
+  }
+  .hero-header-left{
+    justify-content: start;
+  }
+  .hero-header-middle{
+    justify-content: space-between;
+    padding: 5px;
+    visibility: hidden;
+    position: absolute;
+  }
+  .hero-header-right{
+    justify-content: start;
+    padding: 5px;
+  }
+  .hero-heading{
+      font-size: 2rem;
+      
+  }
+  .hero-cards h1,.hero-cards p{
+    font-size: 1rem;
+    color: white;
+  }
+  .hero-cards p{
+    font-weight: lighter;
+  }
+  .hero-cards{
+    background-color: #0202024f;
+  }
+  .search-bar, .search-input{
+    background-color: transparent;
+    color: white;
+  }
+  .search-bar{
+    border: solid white 1px;
+    padding: 2px;
+  }
+  .logo{
+    text-shadow: 2px 2px 20px white ;
+  }
+}
